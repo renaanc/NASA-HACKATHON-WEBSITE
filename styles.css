@@ -1,0 +1,264 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header 1 */
+.header1 {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-content: center;
+    font-size: 11px;
+}
+
+.header1 .project-info {
+    display: flex;
+    flex: 1; /* Faz com que o espaço entre os itens seja distribuído */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 .project-info h1 {
+    margin-right: auto; /* Empurra os itens seguintes para a direita */
+}
+
+.header1 .social-icons {
+    display: flex;
+    align-items: center;
+}
+#datetime {
+    position: absolute;       /* Posiciona o relógio de forma absoluta */
+    left: 50%;                /* Centraliza horizontalmente em relação ao contêiner */
+    transform: translateX(-50%); /* Ajusta a posição para garantir que esteja no centro */
+    font-size: 14px; /* Ajuste o tamanho conforme necessário */
+    font-family: 'Franklin Gothic', sans-serif; /* Opcional: escolha uma fonte */
+}
+
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('font/PROMETHEUS.ttf')
+    format('truetype');
+}
+
+/* Header 2 */
+.header2 {
+    background-color: #333; /* Mude conforme necessário */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header2 nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header2 nav ul li {
+    margin-right: 20px;
+}
+
+.header2 nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header2 .search input {
+    padding: 5px;
+}
+
+.H1 {
+    font-family: 'MinhaFonte'; sans-serif;
+    color: #fff;
+}
+
+/* Body */
+main {
+    display: flex;
+    flex: 1; /* Faz com que o main ocupe o espaço disponível entre o header e o footer */
+    background-color: #18122a; /* Garante que o fundo roxo continue */
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #5b5670;
+    width: 200px;
+    height: 260px;
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+    margin-right: 1px; /* Espaçamento à direita */
+    margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 0 1px #18122a; /* Adiciona uma borda fina na mesma cor do fundo */
+    font-size: 15px;
+}
+
+.sidebar ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px; /* Espaçamento entre os itens */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sidebar p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #18122a;
+    padding: 4px;
+}
+
+/* Estilo da seção de boas-vindas */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #18122a; /* Cor de fundo roxa */
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 800px; /* Limite de largura */
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #4a4a6a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #7095a9; /* Cor ao passar o mouse */
+}
+
+.background img {
+    width: 30%; /* Ajuste o valor para o tamanho desejado */
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços adicionais em elementos inline */
+    margin-right: 90px; /* Centraliza a imagem dentro do div */
+    margin-left: -269px;
+    margin-top: 10px;
+    transform: rotate(-15deg);
+}
+
+
+/* Content-box ajustada para expandir conforme o conteúdo */
+.content-box {
+    width: 100%; /* O container ocupará a largura total disponível */
+    max-width: 1000px; /* Define um limite máximo */
+    background-color: #4a4a6a; /* Cor de fundo */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 10px auto; /* Centraliza o container na página */
+    color: white; /* Cor do texto */
+    display: flex;
+    text-align: justify; /* Justifica o texto */
+    flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 30px; /* Adiciona um espaçamento interno */
+    min-height: 600px; /* Define uma altura mínima, mas deixa a altura ser automática */
+    height: auto; /* Permite que a altura cresça conforme o conteúdo */
+}
+
+.exo_title {
+    padding: 10px;
+    margin: 5px;
+    margin-left: 330px;
+}
+
+.ref {
+    padding: 5px;
+    margin: 1px;
+    margin-left: 290px;
+}
+
+.image {
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.image2 {
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    max-width: 1900em;
+}
+
+.responsive-img {
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 620px; /* Define um tamanho máximo, se necessário */
+    border-radius: 10px; /* Se quiser bordas arredondadas */
+    margin-left: 140px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+/* Para o corpo geral da página */
+body {
+    overflow-y: auto; /* Garante que a rolagem vertical funcione */
+}
+
+.interactive-box {
+    background-color: #000;
+    height: 500px; /* Ajuste conforme necessário */
+    color: #fff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
