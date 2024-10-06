@@ -36,7 +36,7 @@ body {
 }
 
 .header1 .project-info h1 {
-    margin-right: auto; /* Empurra os itens seguintes para a direita */
+    margin-right: auto; /* joga os itens seguintes para a direita */
 }
 
 .header1 .social-icons {
@@ -44,11 +44,11 @@ body {
     align-items: center;
 }
 #datetime {
-    position: absolute;       /* Posiciona o relógio de forma absoluta */
-    left: 50%;                /* Centraliza horizontalmente em relação ao contêiner */
+    position: absolute;       /* relógio de forma absoluta */
+    left: 50%;                /* Centraliza horizontalmente */
     transform: translateX(-50%); /* Ajusta a posição para garantir que esteja no centro */
     font-size: 14px; /* Ajuste o tamanho conforme necessário */
-    font-family: 'Franklin Gothic', sans-serif; /* Opcional: escolha uma fonte */
+    font-family: 'Franklin Gothic', sans-serif; /* escolha uma fonte */
 }
 
 
@@ -94,8 +94,8 @@ body {
 /* Body */
 main {
     display: flex;
-    flex: 1; /* Faz com que o main ocupe o espaço disponível entre o header e o footer */
-    background-color: #18122a; /* Garante que o fundo roxo continue */
+    flex: 1; /* main ocupe o espaço disponível entre o header e o footer */
+    background-color: #18122a; 
 }
 
 /* Barra lateral */

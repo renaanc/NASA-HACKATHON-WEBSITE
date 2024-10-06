@@ -31,7 +31,7 @@ body {
 
 .header1 .project-info {
     display: flex;
-    flex: 1; /* Faz com que o espaço entre os itens seja distribuído */
+    flex: 1; /* espaço entre os itens seja distribuído */
     justify-content: space-between;
     align-items: center;
 }
@@ -45,11 +45,11 @@ body {
     align-items: center;
 }
 #datetime {
-    position: absolute;       /* Posiciona o relógio de forma absoluta */
+    position: absolute;       /* relógio de forma absoluta */
     left: 50%;                /* Centraliza horizontalmente em relação ao contêiner */
     transform: translateX(-50%); /* Ajusta a posição para garantir que esteja no centro */
     font-size: 14px; /* Ajuste o tamanho conforme necessário */
-    font-family: 'Franklin Gothic', sans-serif; /* Opcional: escolha uma fonte */
+    font-family: 'Franklin Gothic', sans-serif; 
 }
 
 
@@ -72,7 +72,7 @@ body {
 
 /* Header 2 */
 .header2 {
-    background-color: #333; /* Mude conforme necessário */
+    background-color: #333; 
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -106,7 +106,7 @@ body {
 /* Body */
 main {
     display: flex;
-    flex: 1; /* Faz com que o main ocupe o espaço disponível entre o header e o footer */
+    flex: 1; /* main ocupe o espaço disponível entre o header e o footer */
     background-color: #18122a; /* Garante que o fundo roxo continue */
 }
 
@@ -158,7 +158,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #18122a; /* Cor de fundo roxa */
+    background-color: #18122a; 
     padding: 40px 20px;
     color: white;
     text-align: center;
@@ -227,7 +227,6 @@ p {
     padding: 30px; /* espaçamento interno */
     height: 99%; /* a altura cresça conforme o conteúdo */
     z-index: 2;
-    box-shadow: none; /* sombra não seja aplicada aqui */
 }
 
 .button {
@@ -250,16 +249,16 @@ p {
 }
 
 .btn:hover {
-    background-color: #4a4a6a; /* Cor do botão ao passar o mouse */
+    background-color: #4a4a6a; 
 }
 
 .btn:active {
-    background-color: #004085; /* Cor ao clicar no botão */
+    background-color: #004085; 
 }
 
 /* Remover o contorno de foco do link */
 .btn:focus {
-    outline: none; /* Remove o contorno ao focar */
+    outline: none; 
 }
 
 /* Estilo opcional para evitar mudança de cor após o clique */
