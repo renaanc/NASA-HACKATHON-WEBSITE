@@ -37,7 +37,7 @@ body {
 }
 
 .header1 .project-info h1 {
-    margin-right: auto; /* Empurra os itens seguintes para a direita */
+    margin-right: auto; /* joga os itens seguintes para a direita */
 }
 
 .header1 .social-icons {
@@ -63,6 +63,11 @@ body {
     font-family: 'MinhaFonte2';
     src: url('font/Roboto-Regular.ttf');
     format('truetype');
+}
+
+@font-face {
+    font-family: 'MinhaFonte3';
+    src: url('font/Roboto-Black.ttf');
 }
 
 /* Header 2 */
@@ -134,9 +139,10 @@ main {
 }
 
 .sidebar p {
-    margin-bottom: 15px;
+    margin-bottom: 9px;
     text-align: center;
-    font-size: 15px;
+    margin-right: 35px;
+    font-size: 17px;
     color: #fff;
 }
 
@@ -146,7 +152,7 @@ main {
     padding: 4px;
 }
 
-/* Estilo da seção de boas-vindas */
+/* seção de boas-vindas */
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -186,18 +192,20 @@ main {
 }
 
 .background img {
-    width: 30%; /* Ajuste o valor para o tamanho desejado */
+    width: 35%; /* Ajuste o valor para o tamanho desejado */
     max-width: 100%;
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Remove espaços adicionais em elementos inline */
     margin-right: 90px; /* Centraliza a imagem dentro do div */
-    margin-left: -65px;
-    margin-top: -495px;
+    margin-left: -85px;
+    margin-top: -890px;
     transform: rotate(-15deg);
+    z-index: 1;
 }
 
 p {
     text-indent: 30px; /* Define o recuo para todos os parágrafos */
+    font-size: 25px;
 }
 
 
@@ -211,12 +219,15 @@ p {
     margin-bottom: 15px;
     margin: 10px auto; /* Centraliza o container na página */
     color: white; /* Cor do texto */
+    align-items: center;
     display: flex;
     text-align: justify; /* Justifica o texto */
-    flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+    flex-direction: column; /* conteúdo seja empilhado verticalmente */
     border-radius: 10px; /* Bordas arredondadas */
-    padding: 30px; /* Adiciona um espaçamento interno */
-    height: 99%; /* Permite que a altura cresça conforme o conteúdo */
+    padding: 30px; /* espaçamento interno */
+    height: 99%; /* a altura cresça conforme o conteúdo */
+    z-index: 2;
+    box-shadow: none; /* sombra não seja aplicada aqui */
 }
 
 .button {
@@ -231,6 +242,7 @@ p {
     color: #fff; /* Cor do texto */
     border: none; /* Remove a borda padrão */
     padding: 10px 20px; /* Espaçamento interno */
+    margin: 25px;
     display: inline-block; /* Respeita o tamanho do conteúdo */
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Muda o cursor ao passar o mouse */
@@ -262,15 +274,17 @@ p {
 
 
 .exo_title {
-    padding: 10px;
-    margin: 5px;
-    margin-left: 330px;
+    font-family: 'MinhaFonte3', sans-serif;
+    padding: 5px;
+    margin: 1px;
+    margin-left: 0 auto;
+    letter-spacing: 5px;
 }
 
 .ref {
     padding: 5px;
     margin: 1px;
-    margin-left: 290px;
+    margin-left: auto;
 }
 
 .image {
@@ -282,20 +296,75 @@ p {
 .image2 {
     padding: 5px;
     margin: 80px;
-    margin-left: 70px;
-    max-width: 2000em;
+    margin-left: 0 auto;
+    max-width: 100%;   
 }
 
+.text {
+    padding: 1px;
+    margin: auto;
+    margin-left: auto;
+    text-indent: 30px; /* Define o recuo para todos os parágrafos */
+    font-size: 24px;
+}
+
+
 .responsive-img {
-    width: 300%; /* Ajusta a largura da imagem ao contêiner */
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
     height: auto; /* Mantém a proporção da imagem */
-    max-width: 1020px; /* Define um tamanho máximo, se necessário */
-    border-radius: 10px; /* Se quiser bordas arredondadas */
-    margin-left: -30px;
-    margin-right: auto;
+    max-width: 1500px; /* Define um tamanho máximo, se necessário */
+    border-radius: 10px; /* bordas arredondadas */
+    margin-left: -5px;
+    margin-right: 15px;
     margin-top: 15px;
     align-items: center;
+
+    
 }
+
+/* Ajuste na largura e responsividade do content-box */
+.content-box {
+    width: 80%; /* Aumenta a largura para telas maiores */
+    max-width: 100%;
+    background-color: #4a4a6a;
+    margin: 20px auto; /* Centraliza o container */
+    color: white;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto; /* Deixa a altura flexível conforme o conteúdo */
+}
+
+.image2 img {
+    width: 100%; /* Ajusta a imagem para ocupar a largura completa do content-box */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+    margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+/* Ajustes de responsividade para telas menores */
+@media (max-width: 768px) {
+    .content-box {
+        width: 90%; /* Ajusta a largura do content-box para telas menores */
+        padding: 15px;
+    }
+
+    .image2 img {
+        width: 100%; /* Certifica-se de que a imagem se ajuste bem em telas menores */
+    }
+
+    .sidebar {
+        width: 100%; /* A barra lateral ocupará a largura total em telas pequenas */
+        margin-left: 0;
+    }
+
+    .background img {
+        width: 100%; /* Ajusta a imagem de fundo para largura total em telas pequenas */
+        margin-top: -350px; /* Ajusta o posicionamento da imagem de fundo */
+        transform: rotate(-10deg);
+    }
+}
+
 
 /* Para o corpo geral da página */
 body {
