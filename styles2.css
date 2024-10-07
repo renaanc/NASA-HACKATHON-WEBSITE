@@ -370,12 +370,6 @@ body {
     overflow-y: auto; /* Garante que a rolagem vertical funcione */
 }
 
-.interactive-box {
-    background-color: #000;
-    height: 500px; /* Ajuste conforme necessário */
-    color: #fff;
-}
-
 /* Rodapé */
 footer {
     background-color: #000;
